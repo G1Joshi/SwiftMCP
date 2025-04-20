@@ -10,10 +10,21 @@ let package = Package(
         .macOS(.v15),
     ],
     products: [
+        .executable(
+            name: "SwiftMCPClient",
+            targets: ["SwiftMCPClient"],
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", from: "0.7.1"),
     ],
     targets: [
+        .executableTarget(
+            name: "SwiftMCPClient",
+            dependencies: [
+                .product(name: "MCP", package: "swift-sdk"),
+            ],
+            path: "SwiftMCPClient/Sources",
+        ),
     ]
 )

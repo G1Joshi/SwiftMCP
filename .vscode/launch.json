@@ -1,3 +1,22 @@
 {
-    "configurations": []
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftMCP}",
+            "name": "Debug SwiftMCPClient",
+            "program": "${workspaceFolder:SwiftMCP}/.build/debug/SwiftMCPClient",
+            "preLaunchTask": "swift: Build Debug SwiftMCPClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftMCP}",
+            "name": "Release SwiftMCPClient",
+            "program": "${workspaceFolder:SwiftMCP}/.build/release/SwiftMCPClient",
+            "preLaunchTask": "swift: Build Release SwiftMCPClient"
+        }
+    ]
 }
