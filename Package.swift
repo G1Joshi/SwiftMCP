@@ -14,6 +14,10 @@ let package = Package(
             name: "SwiftMCPClient",
             targets: ["SwiftMCPClient"],
         ),
+        .executable(
+            name: "SwiftMCPServer",
+            targets: ["SwiftMCPServer"],
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", from: "0.7.1"),
@@ -25,6 +29,13 @@ let package = Package(
                 .product(name: "MCP", package: "swift-sdk"),
             ],
             path: "SwiftMCPClient/Sources",
+        ),
+        .executableTarget(
+            name: "SwiftMCPServer",
+            dependencies: [
+                .product(name: "MCP", package: "swift-sdk"),
+            ],
+            path: "SwiftMCPServer/Sources",
         ),
     ]
 )

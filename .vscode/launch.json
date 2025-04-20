@@ -17,6 +17,24 @@
             "name": "Release SwiftMCPClient",
             "program": "${workspaceFolder:SwiftMCP}/.build/release/SwiftMCPClient",
             "preLaunchTask": "swift: Build Release SwiftMCPClient"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftMCP}",
+            "name": "Debug SwiftMCPServer",
+            "program": "${workspaceFolder:SwiftMCP}/.build/debug/SwiftMCPServer",
+            "preLaunchTask": "swift: Build Debug SwiftMCPServer"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftMCP}",
+            "name": "Release SwiftMCPServer",
+            "program": "${workspaceFolder:SwiftMCP}/.build/release/SwiftMCPServer",
+            "preLaunchTask": "swift: Build Release SwiftMCPServer"
         }
     ]
 }
