@@ -1,6 +1,15 @@
 {
-  "originHash" : "53e59383cd1ae4a6fc4b8d1ce4ce0c711d6dc47b8457b45ff725db1a567c8d9f",
+  "originHash" : "bbd7ded03c49ac97c8873347a1d7c092e34ac3b8266d516e6f242aa01cdf4944",
   "pins" : [
+    {
+      "identity" : "eventsource",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mattt/eventsource.git",
+      "state" : {
+        "revision" : "a2965424a4babeb0c8e4b5ec9708c3939bc52449",
+        "version" : "1.2.0"
+      }
+    },
     {
       "identity" : "swift-log",
       "kind" : "remoteSourceControl",
@@ -15,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/modelcontextprotocol/swift-sdk.git",
       "state" : {
-        "revision" : "cfcead8121de466624a1357e02894616b0057805",
-        "version" : "0.7.1"
+        "revision" : "c0407a0b52677cb395d824cac2879b963075ba8c",
+        "version" : "0.10.2"
       }
     },
     {

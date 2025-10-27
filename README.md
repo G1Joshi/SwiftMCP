@@ -8,9 +8,9 @@ SwiftMCP is a Model Context Protocol (MCP) implementation in Swift, consisting o
 
 ### Requirements
 
-- Swift 6.1 or later
-- iOS 18.0+ / macOS 15.0+
-- Xcode 15.0+
+- Swift 6.2+
+- iOS 26+ / macOS 26+
+- Xcode 26+
 
 ### Project Structure
 
@@ -44,10 +44,10 @@ The SwiftMCP server component provides a Model Context Protocol server implement
 
 ### Features
 
-- Built with Swift 6.1
+- Built with Swift 6.2+
 - Implements MCP protocol over standard I/O
 - Includes support for logging, prompts, resources, and tools
-- Designed for iOS 18+ and macOS 15+
+- Designed for iOS 26+ and macOS 26+
 
 ### Getting Started
 
@@ -80,9 +80,9 @@ The SwiftMCP client component allows Swift applications to connect to and intera
 
 ### Features
 
-- Built with Swift 6.1
+- Built with Swift 6.2+
 - Implements MCP client over standard I/O
-- Designed for iOS 18+ and macOS 15+
+- Designed for iOS 26+ and macOS 26+
 - Simple API for initializing and communicating with MCP servers
 
 ### Getting Started

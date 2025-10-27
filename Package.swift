@@ -1,4 +1,4 @@
-// swift-tools-version: 6.1
+// swift-tools-version: 6.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "SwiftMCP",
     platforms: [
-        .iOS(.v18),
-        .macOS(.v15),
+        .iOS(.v26),
+        .macOS(.v26),
     ],
     products: [
         .executable(
@@ -20,22 +20,22 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", from: "0.7.1"),
+        .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", from: "0.10.2")
     ],
     targets: [
         .executableTarget(
             name: "SwiftMCPClient",
             dependencies: [
-                .product(name: "MCP", package: "swift-sdk"),
+                .product(name: "MCP", package: "swift-sdk")
             ],
             path: "SwiftMCPClient/Sources",
         ),
         .executableTarget(
             name: "SwiftMCPServer",
             dependencies: [
-                .product(name: "MCP", package: "swift-sdk"),
+                .product(name: "MCP", package: "swift-sdk")
             ],
             path: "SwiftMCPServer/Sources",
         ),
-    ]
+    ],
 )
