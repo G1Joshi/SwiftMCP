@@ -21,9 +21,8 @@ struct SwiftMCPClient {
             )
 
             let transport = StdioTransport()
-            try await client.connect(transport: transport)
 
-            let server = try await client.initialize()
+            let server = try await client.connect(transport: transport)
             print("Connected to Server: \(server.serverInfo.name) \(server.serverInfo.version)")
 
             await client.disconnect()
